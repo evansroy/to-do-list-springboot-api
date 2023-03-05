@@ -32,8 +32,8 @@ public class TaskService {
         return taskRepository.findByCompletedTrue();
     }
 
-    public void deleteTask(Task task) {
-        taskRepository.delete(task);
+    public void deleteTaskById(Long id) {
+        taskRepository.deleteById(id);
     }
 
     public Task updateTask(Task task) {
